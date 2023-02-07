@@ -39,6 +39,7 @@ header {
   margin-top: 1.1em;
   border-bottom: 1px solid #B0A796;
   padding-bottom: 1.1em;
+  color: #140301;
 }
 
 .card--img {
@@ -60,7 +61,6 @@ header {
 }
 
 .card--info h2 {
-  color: #140301;
   letter-spacing: 0.17em;
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -76,14 +76,12 @@ header {
 }
 .card--info h1{
   font-size: 1.8rem;
-  color: #140301;
   margin: 0.25em 0 0.5em;
 }
 
 .card--info h3 {
   font-size: 0.8rem;
   margin: 0;
-  color: #140301;
 }
 
 .card--info p {
