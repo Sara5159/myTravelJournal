@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box
+}
+
+body{
+  font-family: 'Spinnaker', sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  background-color: #4E4F56;
+  padding: 1em 0;
+  margin-bottom: 2em;
+}
+
+.header--icon {
+  font-size: 1.5em;
+  color: white;
+}
+
+.header--text {
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: -0.075em;
+  margin: 0;
+  color: white;
+}
+
+.card {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.1em;
+  border-bottom: 1px solid #B0A796;
+  padding-bottom: 1.1em;
+  color: #140301;
+}
+
+.card--img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 5px;
+}
+
+.card--location-info{
+  display: flex;
+  align-items: baseline;
+  column-gap: 1em;
+  flex-wrap: wrap;
+  margin: 1em 0 0;
+  
+}
+.card--location-icon {
+  color: #4E4F56;
+}
+
+.card--info h2 {
+  letter-spacing: 0.17em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  display: flex;
+  margin: 0 0 1em;
+  align-items: baseline;
+}
+
+.card--info a {
+  font-size: 1rem;
+  color: #5D5546;
+  margin: 0;
+}
+.card--info h1{
+  font-size: 1.8rem;
+  margin: 0.25em 0 0.5em;
+}
+
+.card--info h3 {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.card--info p {
+  margin: 1em 0 0;
+  font-size: 1rem;
+  line-height: 150%;
+  max-width: 70ch;
+}
+
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    width: 80%;
+  }
+
+  .card--info p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-overflow: ellipsis;
+  }
+
+  .card--img {
+    width: 90%;
+    height: 40vh;
+    max-height: 300px;
+  }
+
+  .header--icon {
+    font-size: 2.3em;
+  }
+  
+  .header--text {
+    font-size: 2rem;;
+  }
+}
